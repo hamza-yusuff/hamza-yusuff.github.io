@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background: black;
+}
+
+nav {
+    height: 80px;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw-1300px)/2);
+}
+
+
+
+
+.logo{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 2rem;
+}
+
+nav i{
+    color:white !important;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+    padding: 0 1.5rem;
+}
+
+nav i:hover{
+    color: #14ffec !important;
+}
+
+
+.hero{
+    background: black;
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px)/2);
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    
+}
+
+.hey{
+    color: #14ffec;
+    
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+button{
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    color: black;
+    font-weight: bold;
+    background: #14ffec;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover{
+    background: #0d7377;
+    color: white;
+}
+
+.column-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 760px){
+    .hero-container{
+        grid-template-columns: 1fr;
+
+    }
+}
